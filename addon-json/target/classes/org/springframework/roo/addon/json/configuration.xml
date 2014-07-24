@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+        <dependencies>
+            <dependency>
+                <groupId>net.sf.flexjson</groupId>
+                <artifactId>flexjson</artifactId>
+                <version>3.2</version>
+            </dependency>
+            <dependency>
+            	<groupId>org.springframework.roo</groupId>
+            	<artifactId>org.springframework.roo.addon.json.customizing</artifactId>
+            	<version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+</configuration>

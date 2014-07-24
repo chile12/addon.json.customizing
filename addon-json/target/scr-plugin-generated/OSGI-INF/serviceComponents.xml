@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" name="org.springframework.roo.addon.json.JsonCommands">
+        <implementation class="org.springframework.roo.addon.json.JsonCommands"/>
+        <service servicefactory="false">
+            <provide interface="org.springframework.roo.shell.CommandMarker"/>
+        </service>
+        <property name="service.pid" value="org.springframework.roo.addon.json.JsonCommands"/>
+        <reference name="jsonOperations" interface="org.springframework.roo.addon.json.JsonOperations" cardinality="1..1" policy="static" bind="bindJsonOperations" unbind="unbindJsonOperations"/>
+    </scr:component>
+    <scr:component enabled="true" name="org.springframework.roo.addon.json.JsonOperationsImpl">
+        <implementation class="org.springframework.roo.addon.json.JsonOperationsImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.springframework.roo.addon.json.JsonOperations"/>
+        </service>
+        <property name="service.pid" value="org.springframework.roo.addon.json.JsonOperationsImpl"/>
+        <reference name="projectOperations" interface="org.springframework.roo.project.ProjectOperations" cardinality="1..1" policy="static" bind="bindProjectOperations" unbind="unbindProjectOperations"/>
+        <reference name="typeLocationService" interface="org.springframework.roo.classpath.TypeLocationService" cardinality="1..1" policy="static" bind="bindTypeLocationService" unbind="unbindTypeLocationService"/>
+        <reference name="typeManagementService" interface="org.springframework.roo.classpath.TypeManagementService" cardinality="1..1" policy="static" bind="bindTypeManagementService" unbind="unbindTypeManagementService"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="org.springframework.roo.addon.json.JsonMetadataProvider">
+        <implementation class="org.springframework.roo.addon.json.JsonMetadataProvider"/>
+        <service servicefactory="false">
+            <provide interface="org.springframework.roo.classpath.itd.ItdTriggerBasedMetadataProvider"/>
+            <provide interface="org.springframework.roo.classpath.itd.ItdMetadataProvider"/>
+            <provide interface="org.springframework.roo.metadata.MetadataProvider"/>
+            <provide interface="org.springframework.roo.classpath.TriggerBasedMetadataProvider"/>
+            <provide interface="org.springframework.roo.metadata.MetadataNotificationListener"/>
+        </service>
+        <property name="service.pid" value="org.springframework.roo.addon.json.JsonMetadataProvider"/>
+        <reference name="fileManager" interface="org.springframework.roo.process.manager.FileManager" cardinality="1..1" policy="static" bind="bindFileManager" unbind="unbindFileManager"/>
+        <reference name="itdDiscoveryService" interface="org.springframework.roo.classpath.ItdDiscoveryService" cardinality="1..1" policy="static" bind="bindItdDiscoveryService" unbind="unbindItdDiscoveryService"/>
+        <reference name="memberDetailsScanner" interface="org.springframework.roo.classpath.scanner.MemberDetailsScanner" cardinality="1..1" policy="static" bind="bindMemberDetailsScanner" unbind="unbindMemberDetailsScanner"/>
+        <reference name="persistenceMemberLocator" interface="org.springframework.roo.classpath.persistence.PersistenceMemberLocator" cardinality="1..1" policy="static" bind="bindPersistenceMemberLocator" unbind="unbindPersistenceMemberLocator"/>
+        <reference name="typeLocationService" interface="org.springframework.roo.classpath.TypeLocationService" cardinality="1..1" policy="static" bind="bindTypeLocationService" unbind="unbindTypeLocationService"/>
+        <reference name="metadataDependencyRegistry" interface="org.springframework.roo.metadata.MetadataDependencyRegistry" cardinality="1..1" policy="static" bind="bindMetadataDependencyRegistry" unbind="unbindMetadataDependencyRegistry"/>
+        <reference name="metadataService" interface="org.springframework.roo.metadata.MetadataService" cardinality="1..1" policy="static" bind="bindMetadataService" unbind="unbindMetadataService"/>
+    </scr:component>
+</components>

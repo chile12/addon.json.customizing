@@ -1,0 +1,8 @@
+org\springframework\roo\addon\json\RooJson.class
+org\springframework\roo\addon\json\JsonMetadata.class
+org\springframework\roo\addon\json\JsonCommands.class
+org\springframework\roo\addon\json\JsonOperationsImpl.class
+org\springframework\roo\addon\json\CustomDataJsonTags.class
+org\springframework\roo\addon\json\JsonOperations.class
+org\springframework\roo\addon\json\JsonAnnotationValues.class
+org\springframework\roo\addon\json\JsonMetadataProvider.class

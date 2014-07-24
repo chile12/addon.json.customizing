@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1406210078594
+Build-Jdk: 1.7.0_55
+Built-By: Chile
+Bundle-Copyright: Copyright ${project.organization.name}. All Rights Res
+ erved.
+Bundle-Description: Support for JSON document (de-)serialization of proj
+ ect domain entities.
+Bundle-ManifestVersion: 2
+Bundle-Name: Spring Roo - Addon - JSON
+Bundle-SymbolicName: org.springframework.roo.addon.json
+Bundle-Version: 1.2.6.BUILD-SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.springframework.roo.addon.json;uses:="org.springfram
+ ework.roo.model,org.springframework.roo.classpath.itd,org.springframewo
+ rk.roo.classpath.details.annotations,org.springframework.roo.classpath,
+ org.springframework.roo.classpath.details.annotations.populator,org.spr
+ ingframework.roo.shell,org.apache.commons.lang3,org.springframework.roo
+ .classpath.details,org.apache.commons.lang3.builder,org.springframework
+ .roo.project,org.springframework.roo.metadata,org.osgi.service.componen
+ t,org.springframework.roo.addon.plural,org.w3c.dom,org.springframework.
+ roo.support.util";version="1.2.6.BUILD-SNAPSHOT"
+Git-Commit-Hash: 994a19bc58dbe24012721ed09d863ba36a65d0fe
+Import-Package: org.apache.commons.lang3;version="[3.1,4)",org.apache.co
+ mmons.lang3.builder;version="[3.1,4)",org.osgi.service.component;versio
+ n="[1.1,2)",org.springframework.roo.addon.plural;version="[1.2,2)",org.
+ springframework.roo.classpath;version="[1.2,2)",org.springframework.roo
+ .classpath.details;version="[1.2,2)",org.springframework.roo.classpath.
+ details.annotations;version="[1.2,2)",org.springframework.roo.classpath
+ .details.annotations.populator;version="[1.2,2)",org.springframework.ro
+ o.classpath.itd;version="[1.2,2)",org.springframework.roo.metadata;vers
+ ion="[1.2,2)",org.springframework.roo.model;version="[1.2,2)",org.sprin
+ gframework.roo.project;version="[1.2,2)",org.springframework.roo.shell;
+ version="[1.2,2)",org.springframework.roo.support.util;version="[1.2,2)
+ ",org.w3c.dom
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bnd-1.50.0

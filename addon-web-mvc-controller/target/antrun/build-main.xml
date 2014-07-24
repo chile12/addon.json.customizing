@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="C:\Users\Chile\Documents\GitHub\spring-roo\addon-web-mvc-controller\target/../../target/all" preservelastmodified="true">
+    <fileset dir="C:\Users\Chile\Documents\GitHub\spring-roo\addon-web-mvc-controller\target">
+      <include name="*.jar"/>
+      <exclude name="*-tests.jar"/>
+      <exclude name="*-sources.jar"/>
+    </fileset>
+  </copy>
+</target>
+</project>
